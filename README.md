@@ -5,6 +5,7 @@ This is a simple tester for USB cables with USB A and Micro USB B.
 
 ### Cable test
 Connect a cable to both ends of the tester. All four LEDs should light up.
+
 If a LED isn't lighting up the corresponding wire might be broken or not connected.
 Some cables come without the wires for data transmitting. These type of cables is only suiteable for slow charging a device and can be easily detected if the LEDs for D+ and D- are not connected.
 
