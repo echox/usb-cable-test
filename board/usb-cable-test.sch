@@ -1,0 +1,404 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "USB Cable Tester"
+Date "2020-02-26"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5E527EE5
+P 6550 2000
+F 0 "R1" V 6435 2000 50  0000 C CNN
+F 1 "5,1" V 6434 2000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6480 2000 50  0001 C CNN
+F 3 "~" H 6550 2000 50  0001 C CNN
+	1    6550 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E52B96A
+P 6550 2250
+F 0 "R2" V 6435 2250 50  0000 C CNN
+F 1 "5,1" V 6434 2250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6480 2250 50  0001 C CNN
+F 3 "~" H 6550 2250 50  0001 C CNN
+	1    6550 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E52BF6A
+P 6550 2500
+F 0 "R3" V 6435 2500 50  0000 C CNN
+F 1 "5,1" V 6434 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6480 2500 50  0001 C CNN
+F 3 "~" H 6550 2500 50  0001 C CNN
+	1    6550 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_A J1
+U 1 1 5E533902
+P 4400 2300
+F 0 "J1" H 4457 2767 50  0000 C CNN
+F 1 "USB_A" H 4457 2676 50  0000 C CNN
+F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 4550 2250 50  0001 C CNN
+F 3 " ~" H 4550 2250 50  0001 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5E53859A
+P 3750 2300
+F 0 "J2" H 3807 2767 50  0000 C CNN
+F 1 "USB_B_Micro" H 3807 2676 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 3900 2250 50  0001 C CNN
+F 3 "~" H 3900 2250 50  0001 C CNN
+	1    3750 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E56A0B1
+P 6550 2750
+F 0 "R4" V 6435 2750 50  0000 C CNN
+F 1 "5,1" V 6434 2750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 6480 2750 50  0001 C CNN
+F 3 "~" H 6550 2750 50  0001 C CNN
+	1    6550 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5E52CCCD
+P 4650 1300
+F 0 "BT1" V 4905 1350 50  0000 C CNN
+F 1 "Battery_Cell" V 4814 1350 50  0000 C CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 4650 1360 50  0001 C CNN
+F 3 "~" V 4650 1360 50  0001 C CNN
+	1    4650 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E557D73
+P 2450 1700
+F 0 "TP1" H 2450 1933 50  0000 C CNN
+F 1 "TestPoint" H 2450 1934 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2650 1700 50  0001 C CNN
+F 3 "~" H 2650 1700 50  0001 C CNN
+	1    2450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1300 2100 1300
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5E569517
+P 5300 1700
+F 0 "TP2" H 5300 1933 50  0000 C CNN
+F 1 "TestPoint" H 5300 1934 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5500 1700 50  0001 C CNN
+F 3 "~" H 5500 1700 50  0001 C CNN
+	1    5300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5E56951D
+P 5450 1700
+F 0 "TP3" H 5450 1933 50  0000 C CNN
+F 1 "TestPoint" H 5508 1727 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5650 1700 50  0001 C CNN
+F 3 "~" H 5650 1700 50  0001 C CNN
+	1    5450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5E569523
+P 5600 1700
+F 0 "TP4" H 5600 1933 50  0000 C CNN
+F 1 "TestPoint" H 5658 1727 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5800 1700 50  0001 C CNN
+F 3 "~" H 5800 1700 50  0001 C CNN
+	1    5600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5E569529
+P 5750 1700
+F 0 "TP5" H 5750 1933 50  0000 C CNN
+F 1 "TestPoint" H 5750 1934 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5950 1700 50  0001 C CNN
+F 3 "~" H 5950 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2100 6050 2000
+Wire Wire Line
+	6050 2000 6400 2000
+Wire Wire Line
+	6050 2400 6050 2250
+Wire Wire Line
+	6050 2250 6400 2250
+Wire Wire Line
+	5950 2300 5950 2500
+Wire Wire Line
+	5950 2500 6400 2500
+Wire Wire Line
+	6050 2700 6050 2750
+Wire Wire Line
+	6050 2750 6400 2750
+Wire Wire Line
+	5300 1700 5300 2100
+Wire Wire Line
+	5300 2100 6050 2100
+Wire Wire Line
+	5450 1700 5450 2400
+Connection ~ 5450 2400
+Wire Wire Line
+	5450 2400 6050 2400
+Wire Wire Line
+	5600 1700 5600 2300
+Connection ~ 5600 2300
+Wire Wire Line
+	5600 2300 5950 2300
+Wire Wire Line
+	5750 1700 5750 2700
+Connection ~ 5750 2700
+Wire Wire Line
+	5750 2700 6050 2700
+Wire Wire Line
+	3500 2650 3500 2550
+Connection ~ 5300 2100
+Wire Wire Line
+	2100 2300 2250 2300
+Connection ~ 7550 2500
+Wire Wire Line
+	7550 2500 7550 2750
+Wire Wire Line
+	7550 2250 7550 2500
+Connection ~ 7550 2250
+Wire Wire Line
+	7550 2000 7550 2250
+Wire Wire Line
+	7300 2000 7550 2000
+Wire Wire Line
+	7300 2250 7550 2250
+Wire Wire Line
+	7300 2500 7550 2500
+Wire Wire Line
+	7550 2750 7300 2750
+Wire Wire Line
+	6700 2750 7000 2750
+Wire Wire Line
+	6700 2500 7000 2500
+Wire Wire Line
+	6700 2250 7000 2250
+Wire Wire Line
+	6700 2000 7000 2000
+$Comp
+L Device:LED LED4
+U 1 1 5E56D8D1
+P 7150 2750
+F 0 "LED4" H 7143 2874 50  0000 C CNN
+F 1 "LED" H 7143 2586 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 7150 2750 50  0001 C CNN
+F 3 "~" H 7150 2750 50  0001 C CNN
+	1    7150 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED LED3
+U 1 1 5E56D6C6
+P 7150 2500
+F 0 "LED3" H 7143 2336 50  0000 C CNN
+F 1 "LED" H 7143 2336 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 7150 2500 50  0001 C CNN
+F 3 "~" H 7150 2500 50  0001 C CNN
+	1    7150 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED LED2
+U 1 1 5E56D1E1
+P 7150 2250
+F 0 "LED2" H 7143 2086 50  0000 C CNN
+F 1 "LED" H 7143 2086 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 7150 2250 50  0001 C CNN
+F 3 "~" H 7150 2250 50  0001 C CNN
+	1    7150 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED LED1
+U 1 1 5E56D006
+P 7150 2000
+F 0 "LED1" H 7143 1836 50  0000 C CNN
+F 1 "LED" H 7143 1836 50  0001 C CNN
+F 2 "Diode_SMD:D_0201_0603Metric" H 7150 2000 50  0001 C CNN
+F 3 "~" H 7150 2000 50  0001 C CNN
+	1    7150 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 5E55C1BF
+P 4550 3100
+F 0 "D1" H 4550 3365 50  0000 C CNN
+F 1 "1n4148" H 4550 3274 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4550 3100 50  0001 C CNN
+F 3 "~" H 4550 3100 50  0001 C CNN
+	1    4550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D2
+U 1 1 5E55CDB3
+P 4550 3500
+F 0 "D2" H 4550 3765 50  0000 C CNN
+F 1 "1n4148" H 4550 3674 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4550 3500 50  0001 C CNN
+F 3 "~" H 4550 3500 50  0001 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D3
+U 1 1 5E55E398
+P 4550 3900
+F 0 "D3" H 4550 4165 50  0000 C CNN
+F 1 "1n4148" H 4550 4074 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4550 3900 50  0001 C CNN
+F 3 "~" H 4550 3900 50  0001 C CNN
+	1    4550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D4
+U 1 1 5E55FA7A
+P 4550 4300
+F 0 "D4" H 4550 4565 50  0000 C CNN
+F 1 "1n4148" H 4550 4474 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4550 4300 50  0001 C CNN
+F 3 "~" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2000 7550 1300
+Wire Wire Line
+	7550 1300 4750 1300
+Connection ~ 7550 2000
+Wire Wire Line
+	2100 1300 2100 1700
+Wire Wire Line
+	2100 1700 2450 1700
+Wire Wire Line
+	3150 1700 3150 1850
+Wire Wire Line
+	3150 2500 3450 2500
+Connection ~ 2100 1700
+Wire Wire Line
+	2100 1700 2100 2300
+Connection ~ 2450 1700
+Wire Wire Line
+	2450 1700 3150 1700
+Wire Wire Line
+	3450 2300 3150 2300
+Connection ~ 3150 2300
+Wire Wire Line
+	3150 2300 3150 2500
+Wire Wire Line
+	3450 2200 3150 2200
+Connection ~ 3150 2200
+Wire Wire Line
+	3150 2200 3150 2300
+Wire Wire Line
+	3750 1900 3750 1850
+Wire Wire Line
+	3750 1850 3150 1850
+Connection ~ 3150 1850
+Wire Wire Line
+	3150 1850 3150 2200
+Wire Wire Line
+	4700 2100 4800 2100
+Wire Wire Line
+	4700 2300 5000 2300
+Wire Wire Line
+	4700 2400 4900 2400
+Wire Wire Line
+	4400 2700 5100 2700
+Wire Wire Line
+	4750 3100 4800 3100
+Wire Wire Line
+	4800 3100 4800 2100
+Connection ~ 4800 2100
+Wire Wire Line
+	4800 2100 5300 2100
+Wire Wire Line
+	4750 3500 4900 3500
+Wire Wire Line
+	4900 3500 4900 2400
+Connection ~ 4900 2400
+Wire Wire Line
+	4900 2400 5450 2400
+Wire Wire Line
+	5000 2300 5000 3900
+Wire Wire Line
+	5000 3900 4750 3900
+Connection ~ 5000 2300
+Wire Wire Line
+	5000 2300 5600 2300
+Wire Wire Line
+	4750 4300 5100 4300
+Wire Wire Line
+	5100 4300 5100 2700
+Connection ~ 5100 2700
+Wire Wire Line
+	5100 2700 5750 2700
+Wire Wire Line
+	4350 4300 4350 3900
+Wire Wire Line
+	4350 3900 4350 3500
+Connection ~ 4350 3900
+Wire Wire Line
+	4350 3500 4350 3100
+Connection ~ 4350 3500
+Wire Wire Line
+	4350 2900 4350 3100
+Connection ~ 4350 3100
+Wire Wire Line
+	2850 2900 4350 2900
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E5B399F
+P 2450 2300
+F 0 "SW1" H 2450 2585 50  0000 C CNN
+F 1 "BAT Test" H 2450 2494 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 2450 2500 50  0001 C CNN
+F 3 "~" H 2450 2500 50  0001 C CNN
+	1    2450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2300 2850 2300
+Wire Wire Line
+	2850 2300 2850 2900
+Text Label 5750 1300 0    50   ~ 0
+GND
+$EndSCHEMATC
